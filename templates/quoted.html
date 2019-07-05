@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Stock
+{% endblock %}
+
+{% block main %}
+        <div class="form-group">
+            <p class="stock-display">A share of {{ stock["name"] }}'s stock ({{ stock["symbol"] }}) costs ${{ stock["price"] }}.</p>
+        </div>
+{% endblock %}
